@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+    html {
+        width: 100%;
+        height: 100%;
+    }
+    body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        
+        
+    }
+
+    h2,h3 {
+        text-align: center;
+    }
+    header, footer {
+        width: 100%;
+        background: #d223d2;
+        margin: 0;
+    }
+    menu {
+        display: flex;
+        justify-content: flex-end;
+        
+    }
+    menu li {
+        list-style: none;
+        padding: 10px;
+    }
+    .wrapper {
+        display: flex;
+        flex-grow: 1;
+        justify-content: space-between;
+        margin: 0 5%;
+    }
+    main {
+        width: 75%;
+        background: yellow;
+        height: 100%;
+    }
+    article {
+        background: lightyellow;
+    }
+    aside {
+        width: 25%;
+        background: darkcyan;
+        display: flex;
+        flex-direction: column;
+        align-items:stretch;
+        overflow: hidden;
+
+    }
+    img {
+        max-width: 100%;
+    }
+    figure {
+        margin: 0;
+        position: relative;
+    }
+    figcaption {
+        position: absolute;
+        top: 50px;
+        color: #d223d2;
+        font-size: 1em;
+        font-weight: bold;
+    }
+    .wrap-right {
+        float: right;
+        width: 20%;
+        margin-top: 20%;
+        background: #24edf3;
+  }
+    .wrap-left {
+        width: 80%;
+        display: inline-block;
+  
+}
+    
+    
+   
+    
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <menu>
+                <li><a href="#">Menu1</a></li>
+                <li><a href="#">Menu2</a></li>
+                <li><a href="#">Menu3</a></li>
+                <li><a href="#">Menu3</a></li>
+                
+            </menu>
+        </nav> 
+    </header>
+    <div class="wrapper">
+        
+    
+    <main>
+        <article>
+            <div class="wrap-left">
+            <header>
+                <h2>Header article</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque repudiandae quas id! Ad quam architecto nostrum beatae, ea fuga illum similique eveniet ex minima esse ipsam consequatur fugiat ratione non!</p>
+            </header>
+            
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident, eveniet.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident, eveniet.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident, eveniet.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident, eveniet.</p>
+            <figure>
+                <img src="https://pp.userapi.com/c836422/v836422285/2f0d9/zb_zvCRmKTU.jpg" alt="My image">
+                <figcaption>Image figcaption</figcaption>
+            </figure>
+            
+            <footer>
+                <h3>Footer article</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, odio! Doloribus, dolores.</p>
+            </footer>
+            </div>
+            <aside class="asideArticle wrap-right">
+                <h3>Aside Article</h3>
+            </aside>
+        </article>
+    </main>
+    <aside>
+        <h3>Aside</h3>
+        <nav>
+            <menu>
+                <li><a href="#">hklk</a></li>
+                <li><a href="#">LKKJK</a></li>
+                <li><a href="#">fdssdfsdf</a></li>
+            </menu>
+        </nav>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione laboriosam error dicta, fugiat obcaecati dolor quam necessitatibus facere voluptates, quos impedit, possimus. Est necessitatibus excepturi ipsum ratione veniam iure eius.</p>
+    </aside>
+    </div>
+    <footer>
+        <nav>
+            <menu>
+                <li><a href="">FootNav1</a></li>
+                <li><a href="">FootNav2</a></li>
+                <li><a href="">FootNav3</a></li>
+                <li><a href="">FootNav4</a></li>
+                <li><a href="">FootNav5</a></li>
+                <li><a href="">FootNav6</a></li>
+                <li><a href="">FootNav7</a></li>
+                <li><a href="">FootNav8</a></li>
+            </menu>
+        </nav>
+    </footer>
+
+</body>
+</html>

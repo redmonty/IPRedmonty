@@ -11,7 +11,7 @@ console.error('Error');
 null
 true || false
 23 || 3.6e10 || 0x245 || 0324
-'string' || "string2" || ``string3?``
+'string' || "string2" || `string3?`
 []
 {}
 

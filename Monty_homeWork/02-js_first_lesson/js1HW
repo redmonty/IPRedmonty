@@ -1,0 +1,82 @@
+1
+
+\u0063\u006F\u006E\u0073\u006F\u006C\u0065.\u006C\u006F\u0067('\u0068\u0065\u006c\u006c\u006f \u0077\u006f\u0072\u006c\u0064');
+
+2
+
+console.error('Error');
+
+3
+
+null
+true || false
+23 || 3.6e10 || 0x245 || 0324
+'string' || "string2" || `string3?`
+[]
+{}
+
+
+4
+
+console.group('stringLiterals')
+console.log("\"string1\"\n'string2'\n`string3`")
+console.groupEnd()
+
+console.group('numberLiterals')
+console.log("Десятичные: 20,12,.4\nЭкспоненциальная форма:3.6e10, 2.4e-10 \nШестнадцатеричные:0x245, 00X7B\nВосьмеричные:0324,0235")
+console.groupEnd()
+
+console.group('booleanLiterals')
+console.log("false\ntrue")
+console.groupEnd()
+
+5
+
+console.time()
+
+console.group('literalsGroups')
+
+console.group('stringLiterals')
+console.log("\"string1\"\n'string2'\n``string3``")
+console.groupEnd()
+
+console.group('numberLiterals')
+console.log("Десятичные: 20,12,.4\nЭкспоненциальная форма:3.6e10, 2.4e-10 \nШестнадцатеричные:0x245, 00X7B\nВосьмеричные:0324,0235")
+console.groupEnd()
+
+console.group('booleanLiterals')
+console.log("false\ntrue")
+console.groupEnd()
+
+console.group('otherLiterals')
+console.log("null\nObject -{}\nArray - []")
+console.groupEnd()
+
+
+
+console.groupEnd()
+
+console.timeEnd()
+
+6
+
+var age = prompt('Сколько тебе лет?', '1000000');
+console.log('Ничего себе, целых ' + age +'!!!');
+
+7
+
+var age2 = confirm('Вам есть 18?', '');
+console.log(age2);
+
+8
+
+function info () {
+	var name = prompt('Имя?', ''),
+		surname = prompt('Фамилия', ''),
+		age = prompt('Сколько тебе лет?', ''),
+		male = prompt('Пол? ', '');
+	console.info(name + ' ' + surname + ', ' + age + ' лет, ' + male)
+}
+info()
+
+

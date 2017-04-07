@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>EXAMPLEHTML</title>
+    <style>
+    body{
+        background: lightgray;
+        font-size: 20px;
+    }
+    .form-section, header {
+        margin: 20px auto;
+        width: 80%;
+        box-sizing: border-box;
+        padding: 20px 10%;
+        border: 1px solid black;
+        background: #ffffff;
+        text-align: center;
+        border-radius: 10px;
+
+    }
+    input, select {
+        margin-bottom: 20px;
+        padding: 10px;
+        font-size: 20px;
+    }
+    .flexx {
+        display: flex;
+        justify-content: space-around;
+        
+    }
+    .img-section {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        padding: 5%;
+        background: black;
+        
+    }
+    img {
+        display: block;
+        max-width: 100%;
+        border: 3px solid gainsboro;
+        box-sizing: border-box;
+        margin-right: 5px;
+        margin-bottom: 10px;
+    }
+    .section-audio {
+        width: 90%;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Speaker Submission</h1>
+        <p>Want to speak at our fake conference?<br>Fill out this form.</p>
+    </header>
+    <section class="form-section">
+        <form action="" method="GET">
+            
+            <label for="name_1">Name</label>
+            <input type="name" name="name" value="name" id="name_1"><br>
+            <label for="email_1">Email</label>
+            <input type="email" name="name" value="name" id="email_1"><br>
+
+            <span>Type of talk</span>
+            <input id='talk-type-1' name='talk-type' type='radio'value='Main Stage' />
+            <label for='talk-type-1' class='radio-label'>Main Stage</label>
+            <input id='talk-type-2' name='talk-type' type='radio' value='Workshop' />
+            <label for='talk-type-2' class='radio-label'>Workshop</label><br>
+    
+
+            <label for='t-shirt'>T-Shirt Size</label>
+            <select id='t-shirt' name='t-shirt'>
+                <option value='xs'>Extra Small</option>
+                <option value='s'>Small</option>
+                <option value='m'>Medium</option>
+                <option value='l'>Large</option>
+            </select><br>
+            
+        <div class="flexx">
+                
+            
+            <span class="abstract">Abstract</span>
+            <textarea rows="10" cols="30"></textarea><br>
+        </div>
+            <span class="abstractBottom">Describe your talk in 500 words or less</span><br>
+            
+            <input id='end' name='talk-type' type='radio' value='Workshop' />
+            <label for='end' class='radio-label'>I'm actually avaliable the date of the talk</label>
+
+            <p><label for="checkbox1">checkbox</label><input id="checkbox1" type="checkbox"></p>
+            <p><input type="color"></p>
+            <p><input type="date"></p>
+            <p><input type="datetime-local"></p>
+            <p><input type="file"></p>
+            <p>Картинка<input type="image"></p>
+            <p><input type="month"></p>
+            <p>Number <input type="number"></p>
+            
+            <p><label for="pass">Password </label><input id ="pass" type="password" name="" value=""></p>
+            <p>Range <input type="range" max="100" min="1" value="10" step="5"></p>
+            <p>sEARCH <input type="search"></p>
+            <p>Tel <input type="tel"></p>
+            <p>Time <input type="time"></p>
+            <p>Url <input type="url"></p>
+            <p>Week <input type="week"></p>
+            <p><button type="submit">Submit</button> <input type="reset"></p>
+            <p><input type="hiddden" value="hidden"></p>
+
+
+
+
+        </form>
+    </section>
+    <section class="img-section">
+        <img src="https://media.giphy.com/media/6Tak1Gjp3rKdG/giphy.gif" alt="giff">
+        <img src="http://jpg-1.com/media/2017-3-18/bQmIlQ8JDK.jpg" alt="jpg">
+        <img src="http://pngimg.com/uploads/angel/angel_PNG30.png" alt="png">
+        <img src="http://www.noviceusers.ru/uploadimgs/bmp.bmp" alt="bmp">
+        <img src="http://media.istockphoto.com/vectors/world-map-globes-icons-and-symbols-illustration-vector-id467180464" alt="svg">
+    </section>
+    <section class="section-audio">
+
+        <object type="application/x-shockwave-flash" data="http://flv-mp3.com/i/pic/ump3player_500x70.swf" height="70" >
+        <param name="wmode" value="transparent" />
+        <param name="allowFullScreen" value="true" />
+        <param name="allowScriptAccess" value="always" />
+        <param name="movie" value="http://flv-mp3.com/i/pic/ump3player_500x70.swf" />
+        <param name="FlashVars" value="way=http://flv-mp3.com/i/pic/sample.mp3&amp;swf=http://flv-mp3.com/i/pic/ump3player_500x70.swf&amp;w=470&amp;h=70&amp;time_seconds=164&amp;autoplay=0&amp;q=&amp;skin=br&amp;volume=70&amp;comment=" />
+        </object>
+    </section>
+
+    <script>
+
+        var chek = document.getElementById('checkbox1');
+        var radio = document.getElementsByName('talk-type');
+        chek.addEventListener('change', function() {
+            if(chek.checked ) {
+
+                console.log('hello');
+            } else if(!chek.checked) {
+                console.log('world')
+            }
+        });
+
+            
+    </script>
+</body>
+</html>

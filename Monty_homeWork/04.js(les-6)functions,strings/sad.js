@@ -12,9 +12,9 @@ function zebra(str, bool) {
 			    zebraStr += upper + lower;
             } else
             if(bool == false) {
-                upper = str[i].toLowerCase();
-	            lower = str.substring(i+1,i+2).toUpperCase();
-                zebraStr += upper + lower;
+                lower = str[i].toLowerCase();
+	            upper = str.substring(i+1,i+2).toUpperCase();
+                zebraStr += lower + upper;
             }
 		}
 	    return zebraStr;

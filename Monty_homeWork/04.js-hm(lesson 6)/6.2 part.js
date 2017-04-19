@@ -5,8 +5,6 @@ function bigLetter(str) {
 	var firstLetter = str[0].toUpperCase();
 	return firstLetter + str.substr(1, str.length);	
 }
-
-
 /*2. zEbRa
 Напишите функцию zebra(str), которая возвращает строку str с заглавными символома под непарными номерами
 Модифицируйте функции zebra(str, flag), которая возвращает строку str с заглавными символома под 
@@ -30,21 +28,19 @@ function zebra(str, bool) {
 		zebraStr = '',
 		upper = '',
 		lower = '';
-	if(bool == true) {
 		for(var i = 0; i < len; i+=2){
-			upper = str[i].toUpperCase();
-			lower = str.substring(i+1,i+2).toLowerCase();
-			zebraStr += upper + lower;
+            if(bool == true) {
+			    upper = str[i].toUpperCase();
+			    lower = str.substring(i+1,i+2).toLowerCase();
+			    zebraStr += upper + lower;
+            } else
+            if(bool == false) {
+                lower = str[i].toLowerCase();
+	            upper = str.substring(i+1,i+2).toUpperCase();
+                zebraStr += lower + upper;
+            }
 		}
-	} else 
-	if(bool == false) {
-		for(var i = 0; i < len; i+=2){
-			upper = str[i].toLowerCase();
-			lower = str.substring(i+1,i+2).toUpperCase();
-			zebraStr += upper + lower;
-		}
-	}
-	return zebraStr;
+	    return zebraStr;
 }
 
 /*3. includes
@@ -58,7 +54,6 @@ function includes(base, str) {
 	}
 	return true;
 }
-
 /*4. endsWith
 Напишите функцию endsWith(base, str), возвращает true, если строка base заканчивается подстрокой str. 
 (фичи ES6 использовать нельзя)*/
@@ -67,8 +62,6 @@ function endsWith(base, str) {
 	var baseEnds = base.substring(base.length - str.length);
 	return (a == baseEnds) ? true : false;
 }
-
-
 /*5. startsWith
 Напишите функцию startsWith(base, str), возвращает true, если строка base начинается со строки str. 
 (фичи ES6 использовать нельзя)*/
@@ -77,7 +70,6 @@ function startsWith(base, str) {
 	var baseStarts = base.substring(0, str.length);
 	return (baseStarts == str) ? true : false;
 }
-
 /*6. repeatString
 Напишите функцию repeat(str, times), возвращает результат повторения строки str times раз. 
 Внутри функции делать проверку аргумента : [times is целое число; times is Number; times > 0; 
@@ -87,8 +79,7 @@ function repeatString(str, times) {
 	var newString = str;
 	if((typeof times == 'number')&&
 		(times > 0)&&
-		(times != NaN)&&
-		(isFinite(times)!= false)&&
+		(isFinite(times) != true)&&
 		(times % 1 == 0)) {
 
 		for(var i = 1; i < times; i++) {

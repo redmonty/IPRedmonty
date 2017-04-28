@@ -52,7 +52,7 @@ function compareFunctionString(a, b) {
  */
 function compareFunctionType(a, type) {
     if((type === 'Function') ||  (type === 'functiOn') ) {
-        type = type.toLowerCase();
+        type.toLowerCase();
     }
     return (typeof a === type) ? true : false;   
 }

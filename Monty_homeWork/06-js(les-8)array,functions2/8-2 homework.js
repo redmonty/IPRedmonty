@@ -61,11 +61,6 @@ function compareFunctionType(a, type) {
 4. singleExemplar
 Напишите функцию singleExemplar(a), которая принимает 1 аргумент (массив, реализовать безопасность типов) 
 и возвращает новый массив, где все элементы уникальны в пространстве массива.
-1
-2
-3
-4
-'use strict';
 singleExemplar(a) { .. }
 var myArray = [null, 1, 2, 2, 3, [1, 2], NaN, 'str', '1', {1}, null, NaN, 1, 3];
 singleExemplar(singleExemplar); // [null, 1, 2, 3, [1, 2], NaN, 'str', '1', {1}]
